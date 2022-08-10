@@ -10,21 +10,17 @@
   <body>
     <div class="flexbox-container">
       <h1 id="title">Odin Recipes</h1>
-    </div>
-    <div class="flexbox-container">
-      <div>
-        <a href="capcass.html"
-          ><img
-            id="capcass-img"
-            src="images/casserole.webp"
-            alt="Chicken Casserole"
-        /></a>
-        <div class="capcass-image_overlay flexbox-container">
-          <div class="capcass-overlay_title">
-            <h2>Mediterranean Chicken & Pepper Casserole</h2>
-          </div>
-          <div class="capcass-overlay_desc">
-            <p>Desc Here</p>
+      <div class="capcass-container">
+        <div>
+          <a href="capcass.html"
+            ><img
+              id="capcass-img"
+              src="images/casserole.webp"
+              alt="Chicken Casserole"
+          /></a>
+          <div class="capcassDesc1">
+            <h2 id="capcassTitle">Mediterranean Chicken & Pepper Casserole</h2>
+            <p id="capcassDesc2">Desc Here</p>
           </div>
         </div>
       </div>
@@ -45,9 +41,13 @@
             src="images/casserole.webp"
             alt="Chicken Casserole"
         /></a>
-        <div class="flexbox-container capcassDesc1">
-          <h2 id="capcassTitle">Mediterranean Chicken & Pepper Casserole</h2>
-          <p id="capcassDesc2">Desc Here</p>
+        <div class="capcass-image_overlay flexbox-container">
+          <div class="capcass-overlay_title">
+            <h2>Mediterranean Chicken & Pepper Casserole</h2>
+          </div>
+          <div class="capcass-overlay_desc">
+            <p>Desc Here</p>
+          </div>
         </div>
       </div>
     </div>
@@ -55,26 +55,36 @@
 -->
 
 <!--
-  .capcassDesc1{
-    padding: 40px;
+  .capcass-image_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    color: #ffe680;
+    font-family: 'Comfortaa';
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+
+}
+.capcass-image_overlay:hover{
+    opacity: 1;
+    background-color:rgba(0, 0, 0, 0.6);
+    transition: ease-in-out 0.5s;
+}
+.capcass-overlay_title{
+    font-size: 1em;
+
+}
+#capcass-img{
+    display: block;
+    position: relative;
+    border-radius: 20px 20px 20px 20px;
+    border-width: 30px;
+    
     
 }
-.capcassDesc1:hover{
-    opacity: 1;
-    transition: ease-in;
-}
-#capcassTitle{
-    opacity: 0;
-    font-family: 'Comfortaa', sans-serif;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 40px;
-    color: #ffe680;
-}
-#capcassDesc2{
-    opacity: 0;
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    color: #ffe680
 -->
